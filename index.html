@@ -2603,6 +2603,66 @@
                     white-space: normal;
                 }
             }
+                    /* Texto del logo más legible */
+            .brand-copy span {
+                font-size: 12px;
+                letter-spacing: 0.06em;
+                line-height: 1.35;
+                max-width: 230px;
+                font-weight: 600;
+            }
+            @media (min-width: 961px) and (max-width: 1100px) {
+                .brand-copy span {
+                    font-size: 10.5px;
+                    max-width: 190px;
+                }
+            }
+            @media (min-width: 821px) and (max-width: 960px) {
+                .brand-copy span {
+                    font-size: 9.5px;
+                    max-width: 160px;
+                }
+            }
+            @media (max-width: 600px) {
+                .brand-copy span {
+                    font-size: 10px;
+                    letter-spacing: 0.04em;
+                    max-width: 180px;
+                }
+            }
+            @media (max-width: 370px) {
+                .brand-copy span {
+                    font-size: 9.5px;
+                    letter-spacing: 0.03em;
+                }
+            }
+                    /* Etiquetas de servicio: sin desbordes en anchos intermedios */
+            .service-grid > * {
+                min-width: 0;
+            }
+            @media (min-width: 601px) and (max-width: 960px) {
+                .svc-id span:first-child {
+                    font-size: 20px;
+                }
+            }
+            @media (max-width: 370px) {
+                .svc-id span:first-child {
+                    font-size: 17px;
+                }
+            }
+                    .deliverables > *,
+            .deliverable > div {
+                min-width: 0;
+            }
+            .deliverable strong {
+                overflow-wrap: break-word;
+                hyphens: auto;
+            }
+            @media (min-width: 601px) and (max-width: 720px) {
+                .svc-id span:first-child {
+                    font-size: 17px;
+                }
+            }
         </style>
         <meta content="SPG | Proyectos de Ingeniería y Construcción" property="og:title" />
         <meta
